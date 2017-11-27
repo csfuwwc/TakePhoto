@@ -1,17 +1,18 @@
 //
 //  ViewController.m
-//  TakePhoto
+//  TakePhotoDemo
 //
-//  Created by 李彦鹏 on 15/6/30.
-//  Copyright (c) 2015年 李彦鹏. All rights reserved.
+//  Created by 李彦鹏 on 2017/11/27.
+//  Copyright © 2017年 csfuwwc. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "TakePhotos.h"
+
 @interface ViewController ()
-{
-    TakePhotos * takePhoto;
-}
+
+@property (strong, nonatomic) TakePhotos * takePhoto;
+
 @end
 
 @implementation ViewController
@@ -21,19 +22,20 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)show:(id)sender {
+- (IBAction)takePhotoBtnClick:(id)sender
+{
     
-    takePhoto = [[TakePhotos alloc] init];
-    [takePhoto showSheetWithController:self selectCount:5 didHavePhotos:nil];
-    takePhoto.resultBlock = ^(NSArray * photosArray,NSArray * modelsArray){
+    self.takePhoto = [[TakePhotos alloc] init];
+    [self.takePhoto showSheetWithController:self selectCount:5 didHavePhotos:nil];
+    self.takePhoto.resultBlock = ^(NSArray * photosArray,NSArray * modelsArray){
         
     };
-
-    
 }
+
 @end

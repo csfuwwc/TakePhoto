@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "HMTakePhotoManager.h"
+#import <UIKit/UIKit.h>
 @class HMTakePhotoModel;
 @class DetailImageViewModel;
 

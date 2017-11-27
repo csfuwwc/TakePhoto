@@ -6,8 +6,7 @@
 //  Copyright (c) 2015年 zhangbo. All rights reserved.
 //
 
-//typedef void(^ButtonClickBlock)(NSInteger index);
-//typedef void(^DismissComplete)(BOOL isComplete);
+
 
 
 
