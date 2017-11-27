@@ -6,14 +6,10 @@
 //  Copyright (c) 2015年 zhangbo. All rights reserved.
 //
 
-
-
-
-
-#import <UIKit/UIKit.h>
-
 typedef void(^ButtonClickBlock)(NSInteger index);
 typedef void(^DismissComplete)(BOOL isComplete);
+
+#import <UIKit/UIKit.h>
 
 @interface BoomPresentView : UIView
 @property(strong,nonatomic)ButtonClickBlock buttonBlock;
@@ -29,6 +25,30 @@ typedef void(^DismissComplete)(BOOL isComplete);
  *  @return
  */
 -(id)initWithSuperView:(UIView *)superView withTitle:(NSString *)title withDes:(NSString *)des withButtonNames:(NSArray *)buttons;
+/**
+ *  消失
+ */
 -(void)dismiss;
+/**
+ *  弹起
+ */
 -(void)show;
+/**
+ *  下方弹出纯按钮视图初始化方法
+ *
+ *  @param superView 父视图
+ *  @param names     按钮标题数组
+ *  @param index     当前选中列表
+ *
+ *  @return 
+ */
+-(id)initWithSuperView:(UIView *)superView WithButtonNames:(NSArray *)names withSelectedIndex:(NSInteger)index;
+@end
+
+
+@interface MySheetCustomBtn : UIButton
+-(id)initWithFrame:(CGRect)frame    withTitle:(NSString *)title;
+-(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title   withColor:(UIColor *)color;
+-(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title   withColor:(UIColor *)color  withFont:(UIFont*)font;
+
 @end

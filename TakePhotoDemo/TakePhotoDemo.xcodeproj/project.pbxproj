@@ -13,14 +13,35 @@
 		CB236F791FCBF32C00658FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB236F781FCBF32C00658FA8 /* Assets.xcassets */; };
 		CB236F7C1FCBF32C00658FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB236F7A1FCBF32C00658FA8 /* LaunchScreen.storyboard */; };
 		CB236F7F1FCBF32C00658FA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236F7E1FCBF32C00658FA8 /* main.m */; };
-		CB236FAF1FCBF69900658FA8 /* BoomPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FA01FCBF69900658FA8 /* BoomPresentView.m */; };
-		CB236FB01FCBF69900658FA8 /* HMTakePhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FA21FCBF69900658FA8 /* HMTakePhotoCell.m */; };
-		CB236FB11FCBF69900658FA8 /* HMTakePhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FA41FCBF69900658FA8 /* HMTakePhotoManager.m */; };
-		CB236FB21FCBF69900658FA8 /* HMTakePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FA61FCBF69900658FA8 /* HMTakePhotoModel.m */; };
-		CB236FB31FCBF69900658FA8 /* HMTakePhotoNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FA81FCBF69900658FA8 /* HMTakePhotoNavController.m */; };
-		CB236FB41FCBF69900658FA8 /* HMTakePhotoTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FAA1FCBF69900658FA8 /* HMTakePhotoTableController.m */; };
-		CB236FB51FCBF69900658FA8 /* TakePhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FAC1FCBF69900658FA8 /* TakePhotos.m */; };
-		CB236FB61FCBF69900658FA8 /* UIView+FTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FAE1FCBF69900658FA8 /* UIView+FTFrame.m */; };
+		CB236FF51FCBFC4300658FA8 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FF41FCBFC4300658FA8 /* SystemManager.m */; };
+		CB23700E1FCC02E200658FA8 /* TakePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FF81FCC02E200658FA8 /* TakePhotoModel.m */; };
+		CB23700F1FCC02E200658FA8 /* TakePhotosCameraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FFA1FCC02E200658FA8 /* TakePhotosCameraCell.m */; };
+		CB2370101FCC02E200658FA8 /* TakePhotosCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB236FFB1FCC02E200658FA8 /* TakePhotosCameraCell.xib */; };
+		CB2370111FCC02E200658FA8 /* TakePhotosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB236FFD1FCC02E200658FA8 /* TakePhotosCell.m */; };
+		CB2370121FCC02E200658FA8 /* TakePhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB236FFE1FCC02E200658FA8 /* TakePhotosCell.xib */; };
+		CB2370131FCC02E200658FA8 /* TakePhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370001FCC02E200658FA8 /* TakePhotosController.m */; };
+		CB2370141FCC02E200658FA8 /* TakePhotoTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370021FCC02E200658FA8 /* TakePhotoTitleView.m */; };
+		CB2370151FCC02E200658FA8 /* TakePhotosTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370051FCC02E200658FA8 /* TakePhotosTableCell.m */; };
+		CB2370161FCC02E200658FA8 /* TakePhotosTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2370061FCC02E200658FA8 /* TakePhotosTableCell.xib */; };
+		CB2370171FCC02E200658FA8 /* TakePhotosTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370081FCC02E200658FA8 /* TakePhotosTableController.m */; };
+		CB2370181FCC02E200658FA8 /* TakePhotosTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23700A1FCC02E200658FA8 /* TakePhotosTableModel.m */; };
+		CB2370191FCC02E200658FA8 /* TakePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23700B1FCC02E200658FA8 /* TakePhoto.m */; };
+		CB23701A1FCC02E200658FA8 /* TakePhoto.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */; };
+		CB23701D1FCC040D00658FA8 /* BoomPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23701C1FCC040C00658FA8 /* BoomPresentView.m */; };
+		CB2370201FCC090100658FA8 /* UIView+More.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23701F1FCC090100658FA8 /* UIView+More.m */; };
+		CB2370231FCC0D8000658FA8 /* UIImage+More.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370221FCC0D8000658FA8 /* UIImage+More.m */; };
+		CB2370261FCC0FA000658FA8 /* MDPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370251FCC0FA000658FA8 /* MDPresentTransition.m */; };
+		CB2370421FCC11A200658FA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB2370281FCC11A200658FA8 /* Info.plist */; };
+		CB2370431FCC11A200658FA8 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23702A1FCC11A200658FA8 /* MASCompositeConstraint.m */; };
+		CB2370441FCC11A200658FA8 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23702D1FCC11A200658FA8 /* MASConstraint.m */; };
+		CB2370451FCC11A200658FA8 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23702F1FCC11A200658FA8 /* MASConstraintMaker.m */; };
+		CB2370461FCC11A200658FA8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370311FCC11A200658FA8 /* MASLayoutConstraint.m */; };
+		CB2370471FCC11A200658FA8 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370351FCC11A200658FA8 /* MASViewAttribute.m */; };
+		CB2370481FCC11A200658FA8 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370371FCC11A200658FA8 /* MASViewConstraint.m */; };
+		CB2370491FCC11A200658FA8 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370391FCC11A200658FA8 /* NSArray+MASAdditions.m */; };
+		CB23704A1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23703C1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		CB23704B1FCC11A200658FA8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23703E1FCC11A200658FA8 /* View+MASAdditions.m */; };
+		CB23704C1FCC11A200658FA8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370411FCC11A200658FA8 /* ViewController+MASAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,23 +55,65 @@
 		CB236F7B1FCBF32C00658FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB236F7D1FCBF32C00658FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB236F7E1FCBF32C00658FA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB236F9F1FCBF69900658FA8 /* BoomPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomPresentView.h; sourceTree = "<group>"; };
-		CB236FA01FCBF69900658FA8 /* BoomPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomPresentView.m; sourceTree = "<group>"; };
-		CB236FA11FCBF69900658FA8 /* HMTakePhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTakePhotoCell.h; sourceTree = "<group>"; };
-		CB236FA21FCBF69900658FA8 /* HMTakePhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTakePhotoCell.m; sourceTree = "<group>"; };
-		CB236FA31FCBF69900658FA8 /* HMTakePhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTakePhotoManager.h; sourceTree = "<group>"; };
-		CB236FA41FCBF69900658FA8 /* HMTakePhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTakePhotoManager.m; sourceTree = "<group>"; };
-		CB236FA51FCBF69900658FA8 /* HMTakePhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTakePhotoModel.h; sourceTree = "<group>"; };
-		CB236FA61FCBF69900658FA8 /* HMTakePhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTakePhotoModel.m; sourceTree = "<group>"; };
-		CB236FA71FCBF69900658FA8 /* HMTakePhotoNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTakePhotoNavController.h; sourceTree = "<group>"; };
-		CB236FA81FCBF69900658FA8 /* HMTakePhotoNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTakePhotoNavController.m; sourceTree = "<group>"; };
-		CB236FA91FCBF69900658FA8 /* HMTakePhotoTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTakePhotoTableController.h; sourceTree = "<group>"; };
-		CB236FAA1FCBF69900658FA8 /* HMTakePhotoTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTakePhotoTableController.m; sourceTree = "<group>"; };
-		CB236FAB1FCBF69900658FA8 /* TakePhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotos.h; sourceTree = "<group>"; };
-		CB236FAC1FCBF69900658FA8 /* TakePhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotos.m; sourceTree = "<group>"; };
-		CB236FAD1FCBF69900658FA8 /* UIView+FTFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FTFrame.h"; sourceTree = "<group>"; };
-		CB236FAE1FCBF69900658FA8 /* UIView+FTFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FTFrame.m"; sourceTree = "<group>"; };
-		CB236FB81FCBF83800658FA8 /* TakePhoto.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakePhoto.pch; sourceTree = SOURCE_ROOT; };
+		CB236FF01FCBFBAD00658FA8 /* TakePhoto.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhoto.pch; sourceTree = "<group>"; };
+		CB236FF31FCBFC4300658FA8 /* SystemManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
+		CB236FF41FCBFC4300658FA8 /* SystemManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemManager.m; sourceTree = "<group>"; };
+		CB236FF71FCC02E200658FA8 /* TakePhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoModel.h; sourceTree = "<group>"; };
+		CB236FF81FCC02E200658FA8 /* TakePhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoModel.m; sourceTree = "<group>"; };
+		CB236FF91FCC02E200658FA8 /* TakePhotosCameraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotosCameraCell.h; sourceTree = "<group>"; };
+		CB236FFA1FCC02E200658FA8 /* TakePhotosCameraCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotosCameraCell.m; sourceTree = "<group>"; };
+		CB236FFB1FCC02E200658FA8 /* TakePhotosCameraCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotosCameraCell.xib; sourceTree = "<group>"; };
+		CB236FFC1FCC02E200658FA8 /* TakePhotosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotosCell.h; sourceTree = "<group>"; };
+		CB236FFD1FCC02E200658FA8 /* TakePhotosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotosCell.m; sourceTree = "<group>"; };
+		CB236FFE1FCC02E200658FA8 /* TakePhotosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotosCell.xib; sourceTree = "<group>"; };
+		CB236FFF1FCC02E200658FA8 /* TakePhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotosController.h; sourceTree = "<group>"; };
+		CB2370001FCC02E200658FA8 /* TakePhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotosController.m; sourceTree = "<group>"; };
+		CB2370011FCC02E200658FA8 /* TakePhotoTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoTitleView.h; sourceTree = "<group>"; };
+		CB2370021FCC02E200658FA8 /* TakePhotoTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoTitleView.m; sourceTree = "<group>"; };
+		CB2370041FCC02E200658FA8 /* TakePhotosTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotosTableCell.h; sourceTree = "<group>"; };
+		CB2370051FCC02E200658FA8 /* TakePhotosTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotosTableCell.m; sourceTree = "<group>"; };
+		CB2370061FCC02E200658FA8 /* TakePhotosTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotosTableCell.xib; sourceTree = "<group>"; };
+		CB2370071FCC02E200658FA8 /* TakePhotosTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotosTableController.h; sourceTree = "<group>"; };
+		CB2370081FCC02E200658FA8 /* TakePhotosTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotosTableController.m; sourceTree = "<group>"; };
+		CB2370091FCC02E200658FA8 /* TakePhotosTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotosTableModel.h; sourceTree = "<group>"; };
+		CB23700A1FCC02E200658FA8 /* TakePhotosTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotosTableModel.m; sourceTree = "<group>"; };
+		CB23700B1FCC02E200658FA8 /* TakePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhoto.m; sourceTree = "<group>"; };
+		CB23700C1FCC02E200658FA8 /* TakePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhoto.h; sourceTree = "<group>"; };
+		CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TakePhoto.bundle; sourceTree = "<group>"; };
+		CB23701B1FCC040C00658FA8 /* BoomPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomPresentView.h; sourceTree = "<group>"; };
+		CB23701C1FCC040C00658FA8 /* BoomPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomPresentView.m; sourceTree = "<group>"; };
+		CB23701E1FCC090100658FA8 /* UIView+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+More.h"; sourceTree = "<group>"; };
+		CB23701F1FCC090100658FA8 /* UIView+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+More.m"; sourceTree = "<group>"; };
+		CB2370211FCC0D8000658FA8 /* UIImage+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+More.h"; sourceTree = "<group>"; };
+		CB2370221FCC0D8000658FA8 /* UIImage+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+More.m"; sourceTree = "<group>"; };
+		CB2370241FCC0FA000658FA8 /* MDPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPresentTransition.h; sourceTree = "<group>"; };
+		CB2370251FCC0FA000658FA8 /* MDPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPresentTransition.m; sourceTree = "<group>"; };
+		CB2370281FCC11A200658FA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2370291FCC11A200658FA8 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		CB23702A1FCC11A200658FA8 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		CB23702B1FCC11A200658FA8 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		CB23702C1FCC11A200658FA8 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		CB23702D1FCC11A200658FA8 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		CB23702E1FCC11A200658FA8 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		CB23702F1FCC11A200658FA8 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		CB2370301FCC11A200658FA8 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		CB2370311FCC11A200658FA8 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		CB2370321FCC11A200658FA8 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		CB2370331FCC11A200658FA8 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		CB2370341FCC11A200658FA8 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		CB2370351FCC11A200658FA8 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		CB2370361FCC11A200658FA8 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		CB2370371FCC11A200658FA8 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		CB2370381FCC11A200658FA8 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		CB2370391FCC11A200658FA8 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		CB23703A1FCC11A200658FA8 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		CB23703B1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		CB23703C1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		CB23703D1FCC11A200658FA8 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		CB23703E1FCC11A200658FA8 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		CB23703F1FCC11A200658FA8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		CB2370401FCC11A200658FA8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		CB2370411FCC11A200658FA8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +146,8 @@
 		CB236F6E1FCBF32C00658FA8 /* TakePhotoDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CB236F9E1FCBF69900658FA8 /* TakePhoto */,
+				CB236FF21FCBFC2D00658FA8 /* Other */,
+				CB236FF11FCBFC2D00658FA8 /* TakePhoto */,
 				CB236F6F1FCBF32C00658FA8 /* AppDelegate.h */,
 				CB236F701FCBF32C00658FA8 /* AppDelegate.m */,
 				CB236F721FCBF32C00658FA8 /* ViewController.h */,
@@ -91,35 +155,109 @@
 				CB236F751FCBF32C00658FA8 /* Main.storyboard */,
 				CB236F781FCBF32C00658FA8 /* Assets.xcassets */,
 				CB236F7A1FCBF32C00658FA8 /* LaunchScreen.storyboard */,
+				CB236FF01FCBFBAD00658FA8 /* TakePhoto.pch */,
 				CB236F7D1FCBF32C00658FA8 /* Info.plist */,
-				CB236FB81FCBF83800658FA8 /* TakePhoto.pch */,
 				CB236F7E1FCBF32C00658FA8 /* main.m */,
 			);
 			path = TakePhotoDemo;
 			sourceTree = "<group>";
 		};
-		CB236F9E1FCBF69900658FA8 /* TakePhoto */ = {
+		CB236FF11FCBFC2D00658FA8 /* TakePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				CB236F9F1FCBF69900658FA8 /* BoomPresentView.h */,
-				CB236FA01FCBF69900658FA8 /* BoomPresentView.m */,
-				CB236FA11FCBF69900658FA8 /* HMTakePhotoCell.h */,
-				CB236FA21FCBF69900658FA8 /* HMTakePhotoCell.m */,
-				CB236FA31FCBF69900658FA8 /* HMTakePhotoManager.h */,
-				CB236FA41FCBF69900658FA8 /* HMTakePhotoManager.m */,
-				CB236FA51FCBF69900658FA8 /* HMTakePhotoModel.h */,
-				CB236FA61FCBF69900658FA8 /* HMTakePhotoModel.m */,
-				CB236FA71FCBF69900658FA8 /* HMTakePhotoNavController.h */,
-				CB236FA81FCBF69900658FA8 /* HMTakePhotoNavController.m */,
-				CB236FA91FCBF69900658FA8 /* HMTakePhotoTableController.h */,
-				CB236FAA1FCBF69900658FA8 /* HMTakePhotoTableController.m */,
-				CB236FAB1FCBF69900658FA8 /* TakePhotos.h */,
-				CB236FAC1FCBF69900658FA8 /* TakePhotos.m */,
-				CB236FAD1FCBF69900658FA8 /* UIView+FTFrame.h */,
-				CB236FAE1FCBF69900658FA8 /* UIView+FTFrame.m */,
+				CB23700C1FCC02E200658FA8 /* TakePhoto.h */,
+				CB23700B1FCC02E200658FA8 /* TakePhoto.m */,
+				CB23701B1FCC040C00658FA8 /* BoomPresentView.h */,
+				CB23701C1FCC040C00658FA8 /* BoomPresentView.m */,
+				CB236FF61FCC02E200658FA8 /* TakePhotosDetail */,
+				CB2370031FCC02E200658FA8 /* TakePhotosList */,
+				CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */,
 			);
 			name = TakePhoto;
 			path = ../../TakePhoto;
+			sourceTree = "<group>";
+		};
+		CB236FF21FCBFC2D00658FA8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CB236FF31FCBFC4300658FA8 /* SystemManager.h */,
+				CB236FF41FCBFC4300658FA8 /* SystemManager.m */,
+				CB23701E1FCC090100658FA8 /* UIView+More.h */,
+				CB23701F1FCC090100658FA8 /* UIView+More.m */,
+				CB2370211FCC0D8000658FA8 /* UIImage+More.h */,
+				CB2370221FCC0D8000658FA8 /* UIImage+More.m */,
+				CB2370241FCC0FA000658FA8 /* MDPresentTransition.h */,
+				CB2370251FCC0FA000658FA8 /* MDPresentTransition.m */,
+				CB2370271FCC11A200658FA8 /* Masonry */,
+			);
+			name = Other;
+			path = ../../Other;
+			sourceTree = "<group>";
+		};
+		CB236FF61FCC02E200658FA8 /* TakePhotosDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CB236FF71FCC02E200658FA8 /* TakePhotoModel.h */,
+				CB236FF81FCC02E200658FA8 /* TakePhotoModel.m */,
+				CB236FF91FCC02E200658FA8 /* TakePhotosCameraCell.h */,
+				CB236FFA1FCC02E200658FA8 /* TakePhotosCameraCell.m */,
+				CB236FFB1FCC02E200658FA8 /* TakePhotosCameraCell.xib */,
+				CB236FFC1FCC02E200658FA8 /* TakePhotosCell.h */,
+				CB236FFD1FCC02E200658FA8 /* TakePhotosCell.m */,
+				CB236FFE1FCC02E200658FA8 /* TakePhotosCell.xib */,
+				CB236FFF1FCC02E200658FA8 /* TakePhotosController.h */,
+				CB2370001FCC02E200658FA8 /* TakePhotosController.m */,
+				CB2370011FCC02E200658FA8 /* TakePhotoTitleView.h */,
+				CB2370021FCC02E200658FA8 /* TakePhotoTitleView.m */,
+			);
+			path = TakePhotosDetail;
+			sourceTree = "<group>";
+		};
+		CB2370031FCC02E200658FA8 /* TakePhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				CB2370041FCC02E200658FA8 /* TakePhotosTableCell.h */,
+				CB2370051FCC02E200658FA8 /* TakePhotosTableCell.m */,
+				CB2370061FCC02E200658FA8 /* TakePhotosTableCell.xib */,
+				CB2370071FCC02E200658FA8 /* TakePhotosTableController.h */,
+				CB2370081FCC02E200658FA8 /* TakePhotosTableController.m */,
+				CB2370091FCC02E200658FA8 /* TakePhotosTableModel.h */,
+				CB23700A1FCC02E200658FA8 /* TakePhotosTableModel.m */,
+			);
+			path = TakePhotosList;
+			sourceTree = "<group>";
+		};
+		CB2370271FCC11A200658FA8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				CB2370281FCC11A200658FA8 /* Info.plist */,
+				CB2370291FCC11A200658FA8 /* MASCompositeConstraint.h */,
+				CB23702A1FCC11A200658FA8 /* MASCompositeConstraint.m */,
+				CB23702B1FCC11A200658FA8 /* MASConstraint+Private.h */,
+				CB23702C1FCC11A200658FA8 /* MASConstraint.h */,
+				CB23702D1FCC11A200658FA8 /* MASConstraint.m */,
+				CB23702E1FCC11A200658FA8 /* MASConstraintMaker.h */,
+				CB23702F1FCC11A200658FA8 /* MASConstraintMaker.m */,
+				CB2370301FCC11A200658FA8 /* MASLayoutConstraint.h */,
+				CB2370311FCC11A200658FA8 /* MASLayoutConstraint.m */,
+				CB2370321FCC11A200658FA8 /* Masonry.h */,
+				CB2370331FCC11A200658FA8 /* MASUtilities.h */,
+				CB2370341FCC11A200658FA8 /* MASViewAttribute.h */,
+				CB2370351FCC11A200658FA8 /* MASViewAttribute.m */,
+				CB2370361FCC11A200658FA8 /* MASViewConstraint.h */,
+				CB2370371FCC11A200658FA8 /* MASViewConstraint.m */,
+				CB2370381FCC11A200658FA8 /* NSArray+MASAdditions.h */,
+				CB2370391FCC11A200658FA8 /* NSArray+MASAdditions.m */,
+				CB23703A1FCC11A200658FA8 /* NSArray+MASShorthandAdditions.h */,
+				CB23703B1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				CB23703C1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				CB23703D1FCC11A200658FA8 /* View+MASAdditions.h */,
+				CB23703E1FCC11A200658FA8 /* View+MASAdditions.m */,
+				CB23703F1FCC11A200658FA8 /* View+MASShorthandAdditions.h */,
+				CB2370401FCC11A200658FA8 /* ViewController+MASAdditions.h */,
+				CB2370411FCC11A200658FA8 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +318,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2370421FCC11A200658FA8 /* Info.plist in Resources */,
+				CB2370101FCC02E200658FA8 /* TakePhotosCameraCell.xib in Resources */,
+				CB2370121FCC02E200658FA8 /* TakePhotosCell.xib in Resources */,
 				CB236F7C1FCBF32C00658FA8 /* LaunchScreen.storyboard in Resources */,
+				CB23701A1FCC02E200658FA8 /* TakePhoto.bundle in Resources */,
 				CB236F791FCBF32C00658FA8 /* Assets.xcassets in Resources */,
+				CB2370161FCC02E200658FA8 /* TakePhotosTableCell.xib in Resources */,
 				CB236F771FCBF32C00658FA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,17 +336,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB236FB21FCBF69900658FA8 /* HMTakePhotoModel.m in Sources */,
-				CB236FB51FCBF69900658FA8 /* TakePhotos.m in Sources */,
+				CB2370441FCC11A200658FA8 /* MASConstraint.m in Sources */,
+				CB2370471FCC11A200658FA8 /* MASViewAttribute.m in Sources */,
+				CB2370451FCC11A200658FA8 /* MASConstraintMaker.m in Sources */,
+				CB2370261FCC0FA000658FA8 /* MDPresentTransition.m in Sources */,
 				CB236F741FCBF32C00658FA8 /* ViewController.m in Sources */,
-				CB236FB61FCBF69900658FA8 /* UIView+FTFrame.m in Sources */,
-				CB236FB41FCBF69900658FA8 /* HMTakePhotoTableController.m in Sources */,
-				CB236FB31FCBF69900658FA8 /* HMTakePhotoNavController.m in Sources */,
-				CB236FAF1FCBF69900658FA8 /* BoomPresentView.m in Sources */,
-				CB236FB11FCBF69900658FA8 /* HMTakePhotoManager.m in Sources */,
 				CB236F7F1FCBF32C00658FA8 /* main.m in Sources */,
+				CB2370191FCC02E200658FA8 /* TakePhoto.m in Sources */,
+				CB2370481FCC11A200658FA8 /* MASViewConstraint.m in Sources */,
+				CB23704B1FCC11A200658FA8 /* View+MASAdditions.m in Sources */,
+				CB2370431FCC11A200658FA8 /* MASCompositeConstraint.m in Sources */,
+				CB2370151FCC02E200658FA8 /* TakePhotosTableCell.m in Sources */,
+				CB2370111FCC02E200658FA8 /* TakePhotosCell.m in Sources */,
+				CB236FF51FCBFC4300658FA8 /* SystemManager.m in Sources */,
+				CB2370461FCC11A200658FA8 /* MASLayoutConstraint.m in Sources */,
 				CB236F711FCBF32C00658FA8 /* AppDelegate.m in Sources */,
-				CB236FB01FCBF69900658FA8 /* HMTakePhotoCell.m in Sources */,
+				CB23700F1FCC02E200658FA8 /* TakePhotosCameraCell.m in Sources */,
+				CB2370231FCC0D8000658FA8 /* UIImage+More.m in Sources */,
+				CB23700E1FCC02E200658FA8 /* TakePhotoModel.m in Sources */,
+				CB2370181FCC02E200658FA8 /* TakePhotosTableModel.m in Sources */,
+				CB23704A1FCC11A200658FA8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CB2370131FCC02E200658FA8 /* TakePhotosController.m in Sources */,
+				CB2370171FCC02E200658FA8 /* TakePhotosTableController.m in Sources */,
+				CB2370491FCC11A200658FA8 /* NSArray+MASAdditions.m in Sources */,
+				CB23704C1FCC11A200658FA8 /* ViewController+MASAdditions.m in Sources */,
+				CB2370201FCC090100658FA8 /* UIView+More.m in Sources */,
+				CB2370141FCC02E200658FA8 /* TakePhotoTitleView.m in Sources */,
+				CB23701D1FCC040D00658FA8 /* BoomPresentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,13 +496,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQB5822DLB;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
-				GCC_PREFIX_HEADER = /Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhoto.pch;
+				GCC_PREFIX_HEADER = /Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhotoDemo/TakePhoto.pch;
 				INFOPLIST_FILE = TakePhotoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = csfuwwc.TakePhotoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modain.TakePhotoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -352,13 +515,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQB5822DLB;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
-				GCC_PREFIX_HEADER = /Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhoto.pch;
+				GCC_PREFIX_HEADER = /Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhotoDemo/TakePhoto.pch;
 				INFOPLIST_FILE = TakePhotoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = csfuwwc.TakePhotoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modain.TakePhotoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

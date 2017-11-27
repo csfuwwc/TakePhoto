@@ -7,11 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "TakePhotos.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) TakePhotos * takePhoto;
 
 @end
 
@@ -31,11 +29,17 @@
 - (IBAction)takePhotoBtnClick:(id)sender
 {
     
-    self.takePhoto = [[TakePhotos alloc] init];
-    [self.takePhoto showSheetWithController:self selectCount:5 didHavePhotos:nil];
-    self.takePhoto.resultBlock = ^(NSArray * photosArray,NSArray * modelsArray){
+    [TakePhoto showSystemPhotosWithController:self editEnable:YES resultBlock:^(NSArray *images, NSArray *dataArray) {
         
-    };
+    }];
+    
+}
+- (IBAction)customPhoto:(id)sender
+{
+    [TakePhoto showCustomPhotosWithController:self maxCount:5 resultBlock:^(NSArray *images, NSArray *dataArray) {
+        
+    }];
+    
 }
 
 @end

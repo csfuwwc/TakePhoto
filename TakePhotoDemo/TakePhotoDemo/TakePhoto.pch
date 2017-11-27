@@ -1,0 +1,43 @@
+//
+//  TakePhoto.pch
+//  TakePhoto
+//
+//  Created by 李彦鹏 on 15/7/29.
+//  Copyright (c) 2015年 李彦鹏. All rights reserved.
+//
+
+#ifndef TakePhoto_TakePhoto_pch
+#define TakePhoto_TakePhoto_pch
+#import <UIKit/UIKit.h>
+
+#import "SystemManager.h"
+#import "UIView+More.h"
+#import "UIImage+More.h"
+#import "MDPresentTransition.h"
+#import "Masonry.h"
+#import "TakePhoto.h"
+
+//Objec_key，宏定义中一个#标示把参数转换为字符串，<单独一个#，则表示对这个变量替换后，再加双引号引起来>
+#define  ObjcKey(key)  static const char * key = #key;
+
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+#define iOS8OrLater [UIDevice currentDevice].systemVersion.floatValue >= 8.0
+#define iOS9OrLater  @available(iOS 9.0, *)
+#define iOS11OrLater @available(iOS 11.0, *)
+#define UnderiOS9   [UIDevice currentDevice].systemVersion.floatValue < 9.0
+
+
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#endif
+
+
