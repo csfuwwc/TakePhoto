@@ -9,44 +9,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TakePhotoDemo/ViewController.m"
-            timestampString = "533469455.524089"
+            filePath = "../TakePhoto/TakePhoto.m"
+            timestampString = "533529762.430459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-takePhotoBtnClick:"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
+            landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController takePhotoBtnClick:]"
+                  symbolName = "-[TakePhoto imagePickerController:didFinishPickingMediaWithInfo:]"
                   moduleName = "TakePhotoDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhotoDemo/ViewController.m"
-                  timestampString = "533468840.266654"
+                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhoto/TakePhoto.m"
+                  timestampString = "533526889.875098"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
+                  offsetFromSymbolStart = "570">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__36-[ViewController takePhotoBtnClick:]_block_invoke"
+                  symbolName = "__65-[TakePhoto imagePickerController:didFinishPickingMediaWithInfo:]_block_invoke"
                   moduleName = "TakePhotoDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhotoDemo/ViewController.m"
-                  timestampString = "533468840.269447"
+                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhoto/TakePhoto.m"
+                  timestampString = "533526889.876961"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -57,46 +57,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TakePhotoDemo/ViewController.m"
-            timestampString = "533469455.524525"
+            filePath = "../TakePhoto/TakePhoto.m"
+            timestampString = "533529762.430532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-customPhoto:"
+            startingLineNumber = "395"
+            endingLineNumber = "395"
+            landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController customPhoto:]"
-                  moduleName = "TakePhotoDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhotoDemo/ViewController.m"
-                  timestampString = "533468840.274522"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__30-[ViewController customPhoto:]_block_invoke"
-                  moduleName = "TakePhotoDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhotoDemo/TakePhotoDemo/ViewController.m"
-                  timestampString = "533468840.276594"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

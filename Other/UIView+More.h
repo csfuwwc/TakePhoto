@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  view增加点击事件会掉
+ *  view增加点击事件回调
  *
  *  @param view 点击view
  */
@@ -65,5 +65,7 @@ typedef void(^ClickBlock)(UIView * view);
 
 
 - (void)showZoomAnimation;
+
+- (void)addShadow;
 
 @end

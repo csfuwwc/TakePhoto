@@ -3,7 +3,7 @@
 //  Dreamore
 //
 //  Created by 李彦鹏 on 15/5/29.
-//  Copyright (c) 2015年 zhangbo. All rights reserved.
+//  Copyright (c) 2015年 李彦鹏. All rights reserved.
 //
 #define Height 150
 #define Button_W_H 44
@@ -197,6 +197,7 @@
 
 
 @implementation MySheetCustomBtn
+
 -(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title   withColor:(UIColor *)color  withFont:(UIFont*)font
 {
     if (self = [self init])

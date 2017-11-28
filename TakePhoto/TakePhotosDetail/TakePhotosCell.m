@@ -174,7 +174,7 @@
     
     CGContextAddEllipseInRect(ctx, CGRectMake(0, 0, 24, 24));
     
-    [[UIColor greenColor] setFill];
+    [MDGlobalGreen setFill];
     
     CGContextFillPath(ctx);
     

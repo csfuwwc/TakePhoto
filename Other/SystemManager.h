@@ -58,6 +58,9 @@ typedef void(^AlertBlock)(NSInteger index);
 +(CGSize)getSizeWithWidth:(CGFloat)width content:(NSString *)str font:(int)font lineSpace:(CGFloat)space;
 
 
++(void)customUIImagePickerNavBar:(UINavigationBar *)pickerNavBar;
+
+
 
 
 @end

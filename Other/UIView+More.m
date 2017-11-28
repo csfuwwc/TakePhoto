@@ -214,4 +214,22 @@ ObjcKey(HMZoomAnimaitonKey);
     return objc_getAssociatedObject(self, HMZoomAnimaitonKey);
 }
 
+
+//添加阴影
+- (void)addShadow{
+    
+    self.layer.shadowOpacity = 0.1;                // 阴影透明度
+    self.layer.shadowColor = MDGlobalBlack.CGColor;// 阴影的颜色
+    self.layer.shadowRadius = 15;                  // 阴影扩散的范围控制
+    self.layer.shadowOffset  = CGSizeMake(2, 2);   // 阴影的范围
+    
+}
+
+- (void)removeShadow {
+    self.layer.shadowOpacity = 0.1;                // 阴影透明度
+    self.layer.shadowColor = [UIColor clearColor].CGColor;// 阴影的颜色
+    self.layer.shadowRadius = 15;                  // 阴影扩散的范围控制
+    self.layer.shadowOffset  = CGSizeMake(2, 2);   // 阴影的范围
+}
+
 @end

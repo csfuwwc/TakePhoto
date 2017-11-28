@@ -279,5 +279,64 @@ static char * AlertBlockKey = "AlertBlockKey";
     
 }
 
+#pragma mark  ******适配UIImagePicker******
+
++(void)customUIImagePickerNavBar:(UINavigationBar *)pickerNavBar
+{
+    UINavigationBar *navBar= pickerNavBar;
+    
+    [navBar setBackgroundImage:nil forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    navBar.barStyle = UIBarStyleDefault;
+    navBar.translucent = NO;
+    
+    //设置导航栏颜色
+    [navBar setBarTintColor:[UIColor whiteColor]];
+    
+    [navBar addShadow];
+    
+    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName: MDGlobalBlack,NSFontAttributeName:[UIFont boldSystemFontOfSize:17]}];
+    
+    //去除底部黑线
+    [navBar setBackgroundImage:[SystemManager imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
+    [navBar setShadowImage:[SystemManager imageWithColor:[UIColor whiteColor]]];
+    
+    
+    UIBarButtonItem *barItem=[UIBarButtonItem appearance];
+    
+    //设置BarButtonItem字体大小/颜色
+    [barItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:15],NSForegroundColorAttributeName:MDGlobalGreen} forState:UIControlStateNormal];
+    //设置BarButtonItem不可点击颜色
+    [barItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:15],NSForegroundColorAttributeName:MDGlobalLightWhite} forState:UIControlStateDisabled];
+    
+    //替换返回按钮图片
+    UIImage *image = [UIImage imageNamed:@"nav_back"];
+    image = [image imageWithAlignmentRectInsets:UIEdgeInsetsMake(0, 0, -1.5, 0)];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [navBar setBackIndicatorImage:image];
+    [navBar setBackIndicatorTransitionMaskImage:image];
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, 0) forBarMetrics:UIBarMetricsDefault];
+    
+    
+    
+    
+    
+}
+
++(UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+
 
 @end

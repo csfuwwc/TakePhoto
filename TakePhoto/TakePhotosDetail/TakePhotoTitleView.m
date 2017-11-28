@@ -1,9 +1,9 @@
 //
 //  TakePhotoTitleView.m
-//  MoDianZhongChou
+//  MyCustomTools
 //
 //  Created by 李彦鹏 on 2017/6/23.
-//  Copyright © 2017年 Modian. All rights reserved.
+//  Copyright © 2017年 李彦鹏. All rights reserved.
 //
 
 #import "TakePhotoTitleView.h"
@@ -16,6 +16,8 @@
     {
         self.frame = rect;
         self.backgroundColor = [UIColor clearColor];
+        
+
         
         //标题
         self.titleLab = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -35,7 +37,7 @@
         
         //右侧箭头
         self.rightArrow = [[UIImageView alloc]initWithFrame:CGRectZero];
-        [self.rightArrow setImage:[UIImage imageNamed:@"project-all-arrow-down"]];
+        [self.rightArrow setImage:[TakePhoto topArrowImage]];
         [self addSubview:self.rightArrow];
         
         [self.rightArrow mas_makeConstraints:^(MASConstraintMaker *make) {

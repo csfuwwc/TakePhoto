@@ -95,8 +95,8 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
     btn_rihgt.frame = CGRectMake(0, 0, 60, 22);
     btn_rihgt.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [btn_rihgt setTitle:@"完成" forState:UIControlStateNormal];
-    [btn_rihgt setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [btn_rihgt setTitleColor:[UIColor greenColor] forState:UIControlStateDisabled];
+    [btn_rihgt setTitleColor:MDGlobalGreen forState:UIControlStateNormal];
+    [btn_rihgt setTitleColor:MDGlobalGreen forState:UIControlStateDisabled];
     [btn_rihgt addTarget:self action:@selector(finish:) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn_rihgt];
@@ -110,7 +110,7 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
     btn_left.frame = CGRectMake(0, 0, 60, 22);
     btn_left.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [btn_left setTitle:@"取消" forState:UIControlStateNormal];
-    [btn_left setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [btn_left setTitleColor:MDGlobalGreen forState:UIControlStateNormal];
     [btn_left addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.leftBarButtonItem =
@@ -175,26 +175,6 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
                 [finalArray addObject:[UIImage imageWithData:imageData]];
                 
             }];
-            
-            /*
-            [TakePhoto requestDetailImageForAsset:model.asset resultHandler:^(UIImage * _Nonnull result, NSDictionary * _Nullable info, BOOL isDegraded){
-                
-                
-                //压缩
-                
-                //NSData  * data  =  [UIImage prepareImageDataForUpload:image];
-                
-                //针对GIF已经对model的image和imageData进行了处理~直接使用
-                [finalArray addObject:result];
-                //[dataArray addObject:data];
-                
-                //data = nil;
-                
-                result = nil;
-                
-                
-            }];
-             */
         }
         
         

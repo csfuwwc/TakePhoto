@@ -19,9 +19,12 @@
     
     self.title = @"相薄";
 
-    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     
     self.tableView.tableFooterView = [UIView new];
+    
+
     
     //分割线颜色
     self.tableView.separatorColor = [UIColor lightGrayColor];

@@ -1,9 +1,9 @@
 //
 //  TakePhotoTitleView.h
-//  MoDianZhongChou
+//  MyCustomTools
 //
 //  Created by 李彦鹏 on 2017/6/23.
-//  Copyright © 2017年 Modian. All rights reserved.
+//  Copyright © 2017年 李彦鹏. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -38,6 +38,9 @@
         photo.picker = [[UIImagePickerController alloc]init];
         photo.picker.delegate = photo;
         
+        [SystemManager customUIImagePickerNavBar:photo.picker.navigationBar];
+
+        
     });
     
     return photo;
@@ -184,6 +187,8 @@
     
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:detailVC];
     
+    [SystemManager customUIImagePickerNavBar:nav.navigationBar];
+
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [controller presentViewController:nav animated:YES completion:nil];
@@ -376,9 +381,7 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
         image = [info objectForKeyedSubscript:UIImagePickerControllerOriginalImage];
     }
 
-    //压缩（大小）
-    NSData * originData = [image prepareImageDataForUpload];;
-    
+ 
     if ([TakePhoto sharePhoto].resultBlock)
     {
         [TakePhoto sharePhoto].resultBlock(@[image],nil);
@@ -429,26 +432,34 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
 //获取箭头图片
 + (UIImage *)rightArrowImage
 {
-    return [UIImage imageNamed:@"right_arrow"];
+    return [TakePhoto bundleImageNamed:@"right_arrow@3x"];
+}
+
++ (UIImage *)topArrowImage
+{
+    return [TakePhoto bundleImageNamed:@"top_arrow@3x"];
 }
 
 //获取已选择对应image
 + (UIImage *)overLayerSelectedImage
 {
-    NSBundle *bundle = [NSBundle bundleForClass:[TakePhoto class]];
-    NSURL *url = [bundle URLForResource:@"TakePhoto" withExtension:@"bundle"];
-    NSBundle *imageBundle = [NSBundle bundleWithURL:url];
-    UIImage* infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"photo_selected@3x" ofType:@"png"]];
-    return infoImage;
+    return [TakePhoto bundleImageNamed:@"photo_selected@3x"];
 }
 
 //获取未选择对应image
 + (UIImage *)overLayerUnselectedImage
 {
+    return  [TakePhoto bundleImageNamed:@"photo_unselected@3x"];
+}
+
+
++ (UIImage *)bundleImageNamed:(NSString *)imageName
+{
     NSBundle *bundle = [NSBundle bundleForClass:[TakePhoto class]];
     NSURL *url = [bundle URLForResource:@"TakePhoto" withExtension:@"bundle"];
     NSBundle *imageBundle = [NSBundle bundleWithURL:url];
-    UIImage* infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"photo_unselected@3x" ofType:@"png"]];
+    UIImage* infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:imageName ofType:@"png"]];
+    
     return infoImage;
 }
 
