@@ -9,6 +9,49 @@
 #import "UIView+More.h"
 #import <objc/runtime.h>
 
+
+//获取视图底部极限
+MASViewAttribute*  MD_SafeAreaInset_Masonry_Boom(UIView * view){
+    
+    if(iOS11OrLater)
+    {
+        return view.mas_safeAreaLayoutGuideBottom;
+    }
+    return view.mas_bottom;
+    
+}
+
+//获取视图顶部极限
+MASViewAttribute*  MD_SafeAreaInset_Masonry_Top(UIView * view){
+    
+    if(iOS11OrLater)
+    {
+        return view.mas_safeAreaLayoutGuideTop;
+    }
+    return view.mas_top;
+    
+}
+
+//获取视图安全区域
+UIEdgeInsets MD_SafeAreaInset(UIView * view){
+    
+    if(iOS11OrLater)
+    {
+        if (!UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsetsZero, view.safeAreaInsets))
+        {
+            return  view.safeAreaInsets;
+        }
+    }
+    //防止获取SafeAreaInset获取zero
+    if(IS_IPHONE_X)
+    {
+        return UIEdgeInsetsMake(44, 0, 34, 0);
+    }
+    
+    return UIEdgeInsetsZero;
+}
+
+
 @implementation UIView(More)
 
 -(void)setSize:(CGSize)size

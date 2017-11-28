@@ -108,6 +108,8 @@ typedef void(^ResultBlock)(NSArray * images, NSArray * dataArray);
 
 + (UIImage *)topArrowImage;
 
++ (UIImage *)cameraIconImage;
+
 //获取已选择对应image
 +(UIImage *)overLayerSelectedImage;
 

@@ -21,11 +21,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>使用相机</string>
+	<string></string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>保存照片</string>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>读取照片</string>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -8,11 +8,19 @@
 
 #import "TakePhotosCameraCell.h"
 
+@interface TakePhotosCameraCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *cameraIconImageView;
+
+@end
+
 @implementation TakePhotosCameraCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    [self.cameraIconImageView setImage:[TakePhoto cameraIconImage]];
 }
 
 @end

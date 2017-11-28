@@ -43,6 +43,9 @@
                 <constraint firstAttribute="trailing" secondItem="WgO-TA-oNK" secondAttribute="trailing" id="fZ6-ar-hUj"/>
                 <constraint firstItem="WgO-TA-oNK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tE8-Bl-4Nj"/>
             </constraints>
+            <connections>
+                <outlet property="cameraIconImageView" destination="KuI-Ie-uN5" id="i3C-aX-6ZL"/>
+            </connections>
         </collectionViewCell>
     </objects>
     <resources>

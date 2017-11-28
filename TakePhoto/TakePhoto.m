@@ -440,6 +440,11 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
     return [TakePhoto bundleImageNamed:@"top_arrow@3x"];
 }
 
++ (UIImage *)cameraIconImage
+{
+    return [TakePhoto bundleImageNamed:@"photo_camera@3x"];
+}
+
 //获取已选择对应image
 + (UIImage *)overLayerSelectedImage
 {

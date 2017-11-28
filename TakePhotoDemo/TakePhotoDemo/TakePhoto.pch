@@ -9,12 +9,12 @@
 #ifndef TakePhoto_TakePhoto_pch
 #define TakePhoto_TakePhoto_pch
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
 
 #import "SystemManager.h"
 #import "UIView+More.h"
 #import "UIImage+More.h"
 #import "MDPresentTransition.h"
-#import "Masonry.h"
 #import "TakePhoto.h"
 
 
@@ -47,6 +47,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define iOS9OrLater  @available(iOS 9.0, *)
 #define iOS11OrLater @available(iOS 11.0, *)
 #define UnderiOS9   [UIDevice currentDevice].systemVersion.floatValue < 9.0
+
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IS_IPHONE_X (IS_IPHONE && ScreenWidth == 375.0f && ScreenHeight == 812.0f)
 
 
 //获取设备的物理高度

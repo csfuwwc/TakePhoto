@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
+//获取视图底部极限-约束
+MASViewAttribute*  MD_SafeAreaInset_Masonry_Boom(UIView * view);
+
+//获取视图顶部极限-约束
+MASViewAttribute*  MD_SafeAreaInset_Masonry_Top(UIView * view);
+
+//获取视图安全区域
+UIEdgeInsets MD_SafeAreaInset(UIView * view);
+
 /**
  *  view增加点击事件回调
  *
