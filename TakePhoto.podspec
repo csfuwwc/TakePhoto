@@ -2,6 +2,9 @@ Pod::Spec.new do |s|
 s.name         = 'TakePhoto'
 s.version      = '1.0.0'
 s.summary      = 'A TakePhoto Tool for iOS Developer'
+s.description  = <<-DESC
+                   A TakePhoto Tool for iOS Developer.
+                   DESC
 s.homepage     = 'https://github.com/csfuwwc/TakePhoto'
 s.license      = 'MIT'
 s.authors      = {'csfuwwc' => 'csfuwwc@126.com'}
