@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'TakePhoto'
-s.version      = '1.0.0'
+s.version      = 'v1.0.0'
 s.summary      = 'A TakePhoto Tool for iOS Developer'
 s.homepage     = 'https://github.com/csfuwwc/TakePhoto'
 s.license      = 'MIT'
