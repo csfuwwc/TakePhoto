@@ -9,13 +9,8 @@
 #ifndef TakePhoto_TakePhoto_pch
 #define TakePhoto_TakePhoto_pch
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
 
-#import "SystemManager.h"
-#import "UIView+More.h"
-#import "UIImage+More.h"
-#import "MDPresentTransition.h"
-#import "TakePhoto.h"
+#import "HeaderFile.h"
 
 
 #define MDRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]

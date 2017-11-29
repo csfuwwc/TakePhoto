@@ -114,6 +114,7 @@
 		CB23703F1FCC11A200658FA8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		CB2370401FCC11A200658FA8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		CB2370411FCC11A200658FA8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		CB23704E1FCE69E900658FA8 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +173,7 @@
 				CB2370031FCC02E200658FA8 /* TakePhotosList */,
 				CB236FF61FCC02E200658FA8 /* TakePhotosDetail */,
 				CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */,
+				CB23704E1FCE69E900658FA8 /* HeaderFile.h */,
 			);
 			name = TakePhoto;
 			path = ../../TakePhoto;
