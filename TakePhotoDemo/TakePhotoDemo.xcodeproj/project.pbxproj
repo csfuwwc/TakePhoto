@@ -169,8 +169,8 @@
 				CB23700B1FCC02E200658FA8 /* TakePhoto.m */,
 				CB23701B1FCC040C00658FA8 /* BoomPresentView.h */,
 				CB23701C1FCC040C00658FA8 /* BoomPresentView.m */,
-				CB236FF61FCC02E200658FA8 /* TakePhotosDetail */,
 				CB2370031FCC02E200658FA8 /* TakePhotosList */,
+				CB236FF61FCC02E200658FA8 /* TakePhotosDetail */,
 				CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */,
 			);
 			name = TakePhoto;
@@ -197,16 +197,16 @@
 		CB236FF61FCC02E200658FA8 /* TakePhotosDetail */ = {
 			isa = PBXGroup;
 			children = (
+				CB236FFF1FCC02E200658FA8 /* TakePhotosController.h */,
+				CB2370001FCC02E200658FA8 /* TakePhotosController.m */,
 				CB236FF71FCC02E200658FA8 /* TakePhotoModel.h */,
 				CB236FF81FCC02E200658FA8 /* TakePhotoModel.m */,
-				CB236FF91FCC02E200658FA8 /* TakePhotosCameraCell.h */,
-				CB236FFA1FCC02E200658FA8 /* TakePhotosCameraCell.m */,
-				CB236FFB1FCC02E200658FA8 /* TakePhotosCameraCell.xib */,
 				CB236FFC1FCC02E200658FA8 /* TakePhotosCell.h */,
 				CB236FFD1FCC02E200658FA8 /* TakePhotosCell.m */,
 				CB236FFE1FCC02E200658FA8 /* TakePhotosCell.xib */,
-				CB236FFF1FCC02E200658FA8 /* TakePhotosController.h */,
-				CB2370001FCC02E200658FA8 /* TakePhotosController.m */,
+				CB236FF91FCC02E200658FA8 /* TakePhotosCameraCell.h */,
+				CB236FFA1FCC02E200658FA8 /* TakePhotosCameraCell.m */,
+				CB236FFB1FCC02E200658FA8 /* TakePhotosCameraCell.xib */,
 				CB2370011FCC02E200658FA8 /* TakePhotoTitleView.h */,
 				CB2370021FCC02E200658FA8 /* TakePhotoTitleView.m */,
 			);
@@ -216,13 +216,13 @@
 		CB2370031FCC02E200658FA8 /* TakePhotosList */ = {
 			isa = PBXGroup;
 			children = (
-				CB2370041FCC02E200658FA8 /* TakePhotosTableCell.h */,
-				CB2370051FCC02E200658FA8 /* TakePhotosTableCell.m */,
-				CB2370061FCC02E200658FA8 /* TakePhotosTableCell.xib */,
 				CB2370071FCC02E200658FA8 /* TakePhotosTableController.h */,
 				CB2370081FCC02E200658FA8 /* TakePhotosTableController.m */,
 				CB2370091FCC02E200658FA8 /* TakePhotosTableModel.h */,
 				CB23700A1FCC02E200658FA8 /* TakePhotosTableModel.m */,
+				CB2370041FCC02E200658FA8 /* TakePhotosTableCell.h */,
+				CB2370051FCC02E200658FA8 /* TakePhotosTableCell.m */,
+				CB2370061FCC02E200658FA8 /* TakePhotosTableCell.xib */,
 			);
 			path = TakePhotosList;
 			sourceTree = "<group>";

@@ -15,8 +15,6 @@
 
 @property (strong, nonatomic) UIImagePickerController * picker;
 
-
-
 @property (copy, nonatomic) void(^SaveImageToPhotoBlock)(BOOL sucess);
 
 @end
@@ -187,6 +185,7 @@
     
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:detailVC];
     
+    //样式调整
     [SystemManager customUIImagePickerNavBar:nav.navigationBar];
 
     
@@ -287,27 +286,6 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
             
             
             UIImageWriteToSavedPhotosAlbum(image, [TakePhoto sharePhoto], show?@selector(image:didFinishSavingWithError:contextInfo:):nil, nil);
-
-            /*
-            if ([image isKindOfClass:[YYImage class]])
-            {
-                YYImage * img = (YYImage *)image;
-                
-                if (img.animatedImageType == YYImageTypeGIF)
-                {
-                    [self saveGifImageData:img.animatedImageData];
-                }
-                else
-                {
-                    UIImageWriteToSavedPhotosAlbum(image, [TakePhoto sharePhoto], show?@selector(image:didFinishSavingWithError:contextInfo:):nil, nil);
-                }
-                
-            }
-            else
-            {
-                 UIImageWriteToSavedPhotosAlbum(image, [TakePhoto sharePhoto], show?@selector(image:didFinishSavingWithError:contextInfo:):nil, nil);
-            }
-             */
   
         });
     }];
@@ -435,11 +413,13 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
     return [TakePhoto bundleImageNamed:@"right_arrow@3x"];
 }
 
+//获取顶部箭头图片
 + (UIImage *)topArrowImage
 {
     return [TakePhoto bundleImageNamed:@"top_arrow@3x"];
 }
 
+//获取相机icon图片
 + (UIImage *)cameraIconImage
 {
     return [TakePhoto bundleImageNamed:@"photo_camera@3x"];

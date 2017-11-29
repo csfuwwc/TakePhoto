@@ -106,8 +106,10 @@ typedef void(^ResultBlock)(NSArray * images, NSArray * dataArray);
 //获取箭头图片
 +(UIImage *)rightArrowImage;
 
+//顶部箭头图片
 + (UIImage *)topArrowImage;
 
+//相机icon图片
 + (UIImage *)cameraIconImage;
 
 //获取已选择对应image
