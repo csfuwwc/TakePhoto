@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../TakePhoto/TakePhoto.m"
-            timestampString = "533615743.265325"
+            timestampString = "533707623.592955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "371"
-            endingLineNumber = "371"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
             <Locations>
@@ -26,11 +26,11 @@
                   moduleName = "TakePhotoDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhoto/TakePhoto.m"
-                  timestampString = "533614409.640501"
+                  timestampString = "533705015.35071"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "393"
-                  endingLineNumber = "393"
+                  startingLineNumber = "374"
+                  endingLineNumber = "374"
                   offsetFromSymbolStart = "533">
                </Location>
                <Location
@@ -41,11 +41,11 @@
                   moduleName = "TakePhotoDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhoto/TakePhoto.m"
-                  timestampString = "533614409.642071"
+                  timestampString = "533705015.355954"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "393"
-                  endingLineNumber = "393"
+                  startingLineNumber = "374"
+                  endingLineNumber = "374"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -58,13 +58,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../TakePhoto/TakePhoto.m"
-            timestampString = "533615743.266229"
+            timestampString = "533707623.593142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TakePhoto imagePickerController:didFinishPickingMediaWithInfo:]"
+                  moduleName = "TakePhotoDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhoto/TakePhoto.m"
+                  timestampString = "533705015.368527"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "374"
+                  endingLineNumber = "374"
+                  offsetFromSymbolStart = "533">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__65-[TakePhoto imagePickerController:didFinishPickingMediaWithInfo:]_block_invoke"
+                  moduleName = "TakePhotoDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyanpeng/Desktop/TakePhoto/TakePhoto/TakePhoto.m"
+                  timestampString = "533705015.37017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "374"
+                  endingLineNumber = "374"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../TakePhoto/TakePhotosDetail/TakePhotosController.m"
-            timestampString = "533614409.131399"
+            timestampString = "533704720.537828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
@@ -90,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../TakePhoto/TakePhotosDetail/TakePhotoTitleView.m"
-            timestampString = "533621323.060164"
+            timestampString = "533705137.465729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-setIsShow:"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../TakePhoto/TakePhotosDetail/TakePhotosController.m"
-            timestampString = "533614484.787267"
+            timestampString = "533704720.544613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "398"

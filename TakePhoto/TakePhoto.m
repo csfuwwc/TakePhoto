@@ -8,6 +8,9 @@
 
 #import "TakePhoto.h"
 #import "BoomPresentView.h"
+#import "TakePhotosTableController.h"
+#import "SystemManager.h"
+
 
 #import <AssetsLibrary/AssetsLibrary.h>
 
@@ -68,10 +71,7 @@
 + (void)showSystemPhotosWithController:(UIViewController *)controller editEnable:(BOOL)allowEdit resultBlock:(void (^)(NSArray *, NSArray *))resultBlock
 {
     
-    BoomPresentView * sheet = [[BoomPresentView alloc] initWithSuperView:controller.view withTitle:@"" withDes:@"" withButtonNames:@[@"拍照",@"从手机相册选择"]];
-    [sheet show];
-    
-    sheet.buttonBlock = ^(NSInteger index) {
+    [BoomPresentView showWithSuperView:controller.view title:nil desc:nil buttonNames:@[@"拍照",@"从手机相册选择"] resultBlock:^(NSInteger index) {
         
         switch (index)
         {
@@ -93,10 +93,8 @@
             default:
                 break;
         }
-        
-        
-    };
-    
+    }];
+     
 }
 
 
@@ -503,7 +501,6 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
 //获取完整图片
 + (PHImageRequestID)requestDetailImageForAsset:(PHAsset *_Nullable)asset  resultHandler:(void (^_Nullable)(UIImage * _Nonnull result, NSDictionary * _Nullable info, BOOL isDegraded))resultHandler;
 {
-    //CGSizeMake(ScreenWidth * 2, ScreenWidth * asset.pixelHeight/asset.pixelWidth * 2)
     
     return [self requestPhotoImageForAsset:asset targetSize:CGSizeMake(10000, 10000) contentMode:PHImageContentModeAspectFit options:[TakePhoto detailImageOptions] resultHandler:resultHandler];
 }

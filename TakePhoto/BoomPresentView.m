@@ -8,37 +8,67 @@
 #define Height 150
 #define Button_W_H 44
 #import "BoomPresentView.h"
+#import "SystemManager.h"
 
 @interface BoomPresentView()
 {
     CGFloat  currentHeight;
 }
+
 @property (nonatomic, strong) UIControl * mbView;
+
 @property (nonatomic, strong) UIView * superView;
+
+
+@property(copy,nonatomic)void(^buttonBlock)(NSInteger index) ;
+
+
+/**
+ 初始化
+
+ @param superView 依赖视图
+ @param title 标题
+ @param des 描述
+ @param buttons 按钮名字
+ @return 初始化对象
+ */
+-(id)initWithSuperView:(UIView *)superView withTitle:(NSString *)title withDes:(NSString *)des withButtonNames:(NSArray *)buttons;
+
+//出现
+-(void)show;
+
+//消失
+-(void)dismiss;
+
 @end
+
 @implementation BoomPresentView
+
+
++ (void)showWithSuperView:(UIView *)superView title:(NSString *)title desc:(NSString *)desc
+              buttonNames:(NSArray *)buttons resultBlock:(void (^)(NSInteger))resultBlock
+{
+    BoomPresentView * boomView = [[BoomPresentView alloc] initWithSuperView:superView withTitle:title withDes:desc withButtonNames:buttons];
+    [boomView show];
+    
+    boomView.buttonBlock = resultBlock;
+}
+
+
 -(id)initWithSuperView:(UIView *)superView withTitle:(NSString *)title withDes:(NSString *)des withButtonNames:(NSArray *)buttons
 {
     if (self = [super init])
     {
-        currentHeight = 0;
-        [self initNormalUIWithSuperView:superView  withTitle:title withDes:des withButtonNames:buttons index:-1];
+        [self initNormalUIWithSuperView:superView  withTitle:title withDes:des withButtonNames:buttons ];
 
     }
     return self;
 }
--(id)initWithSuperView:(UIView *)superView WithButtonNames:(NSArray *)names withSelectedIndex:(NSInteger)index
-{
-    if (self = [super init])
-    {
-        currentHeight = 0;
-        [self initNormalUIWithSuperView:superView withTitle:nil withDes:nil withButtonNames:names index:index];
-    }
-    return self;
-}
 
--(void)initNormalUIWithSuperView:(UIView *)superView withTitle:title withDes:des  withButtonNames:buttonNames index:(NSInteger)index
+-(void)initNormalUIWithSuperView:(UIView *)superView withTitle:title withDes:des  withButtonNames:buttonNames
 {
+    currentHeight = 0;
+
     //背景蒙板
     self.superView = superView;
     self.mbView = [[UIControl alloc]initWithFrame:superView.bounds];
@@ -48,7 +78,7 @@
     self.mbView.alpha = 0;
     [superView addSubview:self.mbView];
     
-    self.frame = CGRectMake(0, ScreenHeight, ScreenWidth, Height);
+    self.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, Height);
     self.backgroundColor = [UIColor whiteColor];
     [superView addSubview:self];
     
@@ -58,7 +88,7 @@
     //标题
     if ([title length]>0)
     {
-        UILabel * titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, ScreenWidth, 20)];
+        UILabel * titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, [UIScreen mainScreen].bounds.size.width, 20)];
         titleLab.textAlignment = NSTextAlignmentCenter;
         titleLab.text = title;
         titleLab.font = [UIFont systemFontOfSize:16];
@@ -81,8 +111,8 @@
             currentHeight += 8;
         }
         
-        CGSize size = [SystemManager getSizeWithWidth:ScreenWidth-40 content:des font:14 lineSpace:2] ;
-        UILabel * desLab = [[UILabel alloc] initWithFrame:CGRectMake(20, currentHeight, ScreenWidth-40, size.height)];
+        CGSize size = [SystemManager getSizeWithWidth:[UIScreen mainScreen].bounds.size.width-40 content:des font:14 lineSpace:2] ;
+        UILabel * desLab = [[UILabel alloc] initWithFrame:CGRectMake(20, currentHeight, [UIScreen mainScreen].bounds.size.width-40, size.height)];
         desLab.font = [UIFont systemFontOfSize:14];
         desLab.textColor = UIColorFromRGB(0x888888);
         desLab.text = des;
@@ -102,25 +132,22 @@
         
         currentHeight += size.height + 15;
         
-        titleBtn.frame = CGRectMake(0, 0, ScreenWidth, currentHeight);
+        titleBtn.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, currentHeight);
     }
     
     //按钮
     for (NSString * btnTitle in buttonNames)
     {
         UIColor * color = [UIColor blackColor];
-        if (index==[buttonNames indexOfObject:btnTitle])
-        {
-            color = [UIColor redColor];
-        }
-        MySheetCustomBtn * btn = [[MySheetCustomBtn alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 44) withTitle:btnTitle withColor:color];
+
+        MySheetCustomBtn * btn = [[MySheetCustomBtn alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44) withTitle:btnTitle withColor:color];
         if (currentHeight==0)
         {
-            btn.frame = CGRectMake(0, currentHeight+[buttonNames indexOfObject:btnTitle]*(44+1)+1, ScreenWidth,44);
+            btn.frame = CGRectMake(0, currentHeight+[buttonNames indexOfObject:btnTitle]*(44+1)+1, [UIScreen mainScreen].bounds.size.width,44);
         }
         else
         {
-            btn.frame = CGRectMake(0, currentHeight+1, ScreenWidth,44);
+            btn.frame = CGRectMake(0, currentHeight+1, [UIScreen mainScreen].bounds.size.width,44);
         }
 
         btn.tag = [buttonNames indexOfObject:btnTitle];
@@ -132,14 +159,14 @@
     
     
     
-    MySheetCustomBtn * cancenlBtn = [[MySheetCustomBtn alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 44) withTitle:@"取消"];
-    cancenlBtn.frame = CGRectMake(0, currentHeight+ +10, ScreenWidth, 44);
+    MySheetCustomBtn * cancenlBtn = [[MySheetCustomBtn alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44) withTitle:@"取消"];
+    cancenlBtn.frame = CGRectMake(0, currentHeight+ +10, [UIScreen mainScreen].bounds.size.width, 44);
     [cancenlBtn addTarget:self action:@selector(cancel:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:cancenlBtn];
     
     currentHeight += 44 +10;
     
-    self.frame = CGRectMake(0,  ScreenHeight, ScreenWidth, currentHeight);
+    self.frame = CGRectMake(0,  [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, currentHeight);
     
     
 
@@ -172,10 +199,6 @@
         weakSelf.mbView.alpha = 0;
     } completion:^(BOOL finished) {
         
-        if (weakSelf.dismissComplete)
-        {
-            weakSelf.dismissComplete(finished);
-        }
         [weakSelf removeFromSuperview];
         [weakSelf.mbView removeFromSuperview];
         
@@ -198,12 +221,30 @@
 
 @implementation MySheetCustomBtn
 
+
+
+-(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title
+{
+    self = [self initWithFrame:frame withTitle:title withColor:[UIColor blackColor] withFont:[UIFont systemFontOfSize:17]];
+
+    return self;
+}
+
+-(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title   withColor:(UIColor *)color
+{
+    self = [self initWithFrame:frame withTitle:title withColor:color withFont:[UIFont systemFontOfSize:17]];
+    
+    return self;
+}
+
 -(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title   withColor:(UIColor *)color  withFont:(UIFont*)font
 {
-    if (self = [self init])
+    if (self = [super init])
     {
         self.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
         UILabel * lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+        [self setBackgroundColor:[UIColor whiteColor]];
+        
         lab.textColor =  color;
         lab.text = title;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -212,47 +253,6 @@
         [self addSubview:lab];
         
         
-    }
-    return self;
-}
--(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title   withColor:(UIColor *)color
-{
-    if (self = [self init])
-    {
-        self.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        UILabel * lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
-        lab.textColor =  color;
-        lab.text = title;
-        lab.textAlignment = NSTextAlignmentCenter;
-        lab.font = [UIFont systemFontOfSize:17];
-        lab.userInteractionEnabled = NO;
-        [self addSubview:lab];
-        
-        
-    }
-    return self;
-}
--(id)initWithFrame:(CGRect)frame  withTitle:(NSString *)title
-{
-    if (self = [self init])
-    {
-        self.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        UILabel * lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
-        lab.textColor =  [UIColor blackColor];
-        lab.text = title;
-        lab.textAlignment = NSTextAlignmentCenter;
-        lab.font = [UIFont systemFontOfSize:17];
-        lab.userInteractionEnabled = NO;
-        [self addSubview:lab];
-        
-    }
-    return self;
-}
--(id)init
-{
-    if (self=[super init])
-    {
-        [self setBackgroundColor:[UIColor whiteColor]];
     }
     return self;
 }

@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TakePhotosTableController.h"
-
+#import <UIKit/UIKit.h>
+//import "TakePhotosTableController.h"
+#import <Photos/Photos.h>
 
 //照片间距
 #define photo_space  4

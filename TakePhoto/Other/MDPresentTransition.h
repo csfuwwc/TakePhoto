@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 
 typedef enum : NSUInteger {
-    Transiton_HomeSearch_Present, //搜索框弹出
-    Transiton_HomeSearch_Dissmiss, //搜索框消失
     Transiton_Camera_Present,//相机弹出
     Transiton_Camera_Dissmiss,//相机消失
 } TransitonType;

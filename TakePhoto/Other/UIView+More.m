@@ -8,6 +8,7 @@
 
 #import "UIView+More.h"
 #import <objc/runtime.h>
+#import "SystemManager.h"
 
 
 //获取视图底部极限

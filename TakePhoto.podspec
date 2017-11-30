@@ -10,7 +10,6 @@ s.license      = 'MIT'
 s.authors      = {'csfuwwc' => 'csfuwwc@126.com'}
 s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/csfuwwc/TakePhoto.git', :tag => s.version}
-s.source_files = 'TakePhoto/*.{h,m}'
-s.public_header_files = 'TakePhoto/HeaderFile.h'
+s.source_files  = 'TakePhoto/**/*.{h,m}','TakePhoto/Other/Masonry/*.{h,m}'
 s.requires_arc = true
 end

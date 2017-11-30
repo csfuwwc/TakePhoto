@@ -12,6 +12,8 @@
 #import "TakePhoto.h"
 #import "TakePhotoTitleView.h"
 #import "TakePhotosTableController.h"
+#import "UIView+More.h"
+#import "SystemManager.h"
 
 
 @interface TakePhotosController ()
@@ -399,7 +401,7 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
 
     
     //背景蒙层
-    self.backView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    self.backView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     
     [self.view addSubview:self.backView];
     
@@ -418,13 +420,13 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
         
     };
     
-    listVC.tableView.frame = CGRectMake(0, 0, ScreenWidth, 0);
+    listVC.tableView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 0);
     
     self.listView = listVC.tableView;
     
     [UIView animateWithDuration:0.3 animations:^{
        
-        listVC.tableView.frame = CGRectMake(0, 0, ScreenWidth, self.view.frame.size.height);
+        listVC.tableView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.view.frame.size.height);
         
     } completion:^(BOOL finished) {
         
@@ -443,7 +445,7 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
     {
         [UIView animateWithDuration:0.2 animations:^{
             
-            self.listView.frame = CGRectMake(0, 0, ScreenWidth, 0);
+            self.listView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 0);
             
         } completion:^(BOOL finished) {
             

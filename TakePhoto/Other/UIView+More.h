@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Masonry.h"
 
 //获取视图底部极限-约束
 MASViewAttribute*  MD_SafeAreaInset_Masonry_Boom(UIView * view);

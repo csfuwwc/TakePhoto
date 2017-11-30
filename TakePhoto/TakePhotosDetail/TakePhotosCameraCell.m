@@ -7,6 +7,7 @@
 //
 
 #import "TakePhotosCameraCell.h"
+#import "TakePhoto.h"
 
 @interface TakePhotosCameraCell()
 

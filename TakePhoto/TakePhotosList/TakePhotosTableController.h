@@ -6,7 +6,6 @@
 //  Copyright © 2016年 李彦鹏. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "TakePhotosController.h"
 
 @interface TakePhotosTableController : UITableViewController

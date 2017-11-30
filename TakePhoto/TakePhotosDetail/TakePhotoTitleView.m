@@ -7,6 +7,9 @@
 //
 
 #import "TakePhotoTitleView.h"
+#import "TakePhoto.h"
+#import "SystemManager.h"
+
 
 @implementation TakePhotoTitleView
 
@@ -32,6 +35,9 @@
             
             make.centerX.mas_equalTo(self.mas_centerX).offset(-8.5);
             make.centerY.mas_equalTo(0);
+            make.left.mas_greaterThanOrEqualTo(0);
+            make.top.mas_greaterThanOrEqualTo(0);
+            make.bottom.mas_greaterThanOrEqualTo(0);
             
         }];
         
@@ -44,6 +50,7 @@
             make.centerY.mas_equalTo(0);
             make.left.mas_equalTo(self.titleLab.mas_right).offset(5);
             make.size.mas_equalTo(CGSizeMake(12, 10));
+            make.right.mas_greaterThanOrEqualTo(0);
         }];
         
     }

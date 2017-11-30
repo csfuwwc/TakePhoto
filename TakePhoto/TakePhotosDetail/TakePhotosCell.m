@@ -8,6 +8,8 @@
 
 #import "TakePhotosCell.h"
 #import "TakePhoto.h"
+#import "UIView+More.h"
+#import "SystemManager.h"
 
 #import <MobileCoreServices/UTCoreTypes.h>
 
@@ -25,15 +27,6 @@
 
 @implementation TakePhotosCell
 
-
-- (void)prepareForReuse
-{
-    [super prepareForReuse];
-    
-    //self.photoImageView.isGifStyle = NO;
-    
-    
-}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

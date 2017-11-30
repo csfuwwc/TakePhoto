@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TakePhoto.h"
 
 @interface ViewController ()
 
