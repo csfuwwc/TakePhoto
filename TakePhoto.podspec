@@ -1,15 +1,27 @@
 Pod::Spec.new do |s|
-s.name         = 'TakePhoto'
-s.version      = '1.0.1'
-s.summary      = 'A TakePhoto Tool for iOS Developer'
-s.description  = <<-DESC
-                   A TakePhoto Tool for iOS Developer.
-                   DESC
-s.homepage     = 'https://github.com/csfuwwc/TakePhoto'
-s.license      = 'MIT'
-s.authors      = {'csfuwwc' => 'csfuwwc@126.com'}
-s.platform     = :ios, '8.0'
-s.source       = {:git => 'https://github.com/csfuwwc/TakePhoto.git', :tag => s.version}
-s.source_files  = 'TakePhoto/**/*.{h,m}','TakePhoto/Other/Masonry/*.{h,m}'
-s.requires_arc = true
+  s.name         = 'TakePhoto'
+  s.version      = '1.0.2'
+  s.summary      = 'A TakePhoto Tool for iOS Developer'
+
+  s.homepage     = 'https://github.com/csfuwwc/TakePhoto'
+  s.authors      = {'csfuwwc' => 'csfuwwc@126.com'}
+  s.source       = {:git => 'https://github.com/csfuwwc/TakePhoto.git', :tag => s.version}
+  s.source_file = 'TakePhoto/TakePhoto.{h,m}','TakePhoto/TakePhotosList/*.{h,m}','TakePhoto/TakePhotosDetail/*.{h,m}'
+  s.public_header_file = 'TakePhoto/TakePhoto.h','TakePhoto/TakePhotosList/*.h','TakePhoto/TakePhotosDetail/*.h'
+  s.requires_arc = true
+
+  s.subspec 'Other' do |ss|
+  
+     ss.source_file = 'TakePhoto/Other/{MDPresentTransition,SystemManager,BoomPresentView}.{h,m}'
+     ss.public_header_file = 'TakePhoto/Other/{MDPresentTransition,SystemManager,BoomPresentView}.h'
+
+  end
+
+  s.subspec 'UIKit' do |ss|
+
+     ss.ss.source_file = 'TakePhoto/Other/{UIImage+More,UIView+More}.{h,m}'
+     ss.public_header_file = 'TakePhoto/Other/{UIImage+More,UIView+More}.{h,m}'
+
+  end
+
 end

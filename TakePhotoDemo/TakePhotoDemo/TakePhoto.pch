@@ -10,8 +10,6 @@
 #define TakePhoto_TakePhoto_pch
 #import <UIKit/UIKit.h>
 
-//#import "HeaderFile.h"
-
 
 
 #endif
