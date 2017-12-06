@@ -30,14 +30,14 @@
 - (IBAction)takePhotoBtnClick:(id)sender
 {
     
-    [TakePhoto showSystemPhotosWithController:self editEnable:YES resultBlock:^(NSArray *images, NSArray *dataArray) {
+    [TakePhoto showSystemPhotosWithController:self editEnable:YES resultBlock:^(NSArray *images) {
         
     }];
     
 }
 - (IBAction)customPhoto:(id)sender
 {
-    [TakePhoto showCustomPhotosWithController:self maxCount:5 resultBlock:^(NSArray *images, NSArray *dataArray) {
+    [TakePhoto showCustomPhotosWithController:self maxCount:5 resultBlock:^(NSArray *images) {
         
     }];
     

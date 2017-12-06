@@ -189,7 +189,7 @@ static NSString * const cameraIdentifier = @"TakePhotosCameraCell";
     if ([TakePhoto sharePhoto].resultBlock)
     {
 
-        [TakePhoto sharePhoto].resultBlock(finalArray,nil);
+        [TakePhoto sharePhoto].resultBlock(finalArray);
         
         [finalArray removeAllObjects];
         finalArray = nil;

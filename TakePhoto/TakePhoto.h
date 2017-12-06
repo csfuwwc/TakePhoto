@@ -20,7 +20,7 @@
 #define image_width (([UIScreen mainScreen].bounds.size.width-(4 * (4 + 1)))/4)*2.0
 
 
-typedef void(^ResultBlock)(NSArray * images, NSArray * dataArray);
+typedef void(^ResultBlock)(NSArray * images);
 
 @interface TakePhoto : NSObject
 
@@ -56,7 +56,7 @@ typedef void(^ResultBlock)(NSArray * images, NSArray * dataArray);
  */
 + (void)showCustomPhotosWithController:(UIViewController *)controller
                               maxCount:(NSInteger)count
-                           resultBlock:(void(^)(NSArray * images, NSArray * dataArray))resultBlock;
+                           resultBlock:(void(^)(NSArray * images))resultBlock;
 
 
 /**
@@ -73,7 +73,7 @@ typedef void(^ResultBlock)(NSArray * images, NSArray * dataArray);
  */
 + (void)showSystemPhotosWithController:(UIViewController *)controller
                             editEnable:(BOOL)allowEdit
-                           resultBlock:(void(^)(NSArray * images, NSArray * dataArray))resultBlock;
+                           resultBlock:(void(^)(NSArray * images))resultBlock;
 
 
 

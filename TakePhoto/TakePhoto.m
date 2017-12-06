@@ -49,7 +49,7 @@
 #pragma mark  ------选择照片入口------
 
 //自定义选取照片入口－支持选择多张
-+ (void)showCustomPhotosWithController:(UIViewController *)controller maxCount:(NSInteger)count resultBlock:(void (^)(NSArray *, NSArray *))resultBlock
++ (void)showCustomPhotosWithController:(UIViewController *)controller maxCount:(NSInteger)count resultBlock:(void (^)(NSArray *))resultBlock
 {
     
     __weak typeof(self)weakSelf = self;
@@ -66,7 +66,7 @@
 }
 
 //系统选择照片入口－选择一张
-+ (void)showSystemPhotosWithController:(UIViewController *)controller editEnable:(BOOL)allowEdit resultBlock:(void (^)(NSArray *, NSArray *))resultBlock
++ (void)showSystemPhotosWithController:(UIViewController *)controller editEnable:(BOOL)allowEdit resultBlock:(void (^)(NSArray *))resultBlock
 {
     
     [BoomPresentView showWithSuperView:controller.view title:nil desc:nil buttonNames:@[@"拍照",@"从手机相册选择"] resultBlock:^(NSInteger index) {
@@ -106,7 +106,7 @@
 #pragma mark <调用自定义相册-实现>
 
 //调用自定义相册
-+ (void)takePhotoFromCustomLibraryWithController:(UIViewController *)controller maxCount:(NSInteger)count resultBlock:(void (^)(NSArray *, NSArray *))resultBlock
++ (void)takePhotoFromCustomLibraryWithController:(UIViewController *)controller maxCount:(NSInteger)count resultBlock:(void (^)(NSArray *))resultBlock
 {
  
     //选择照片结果回调
@@ -358,7 +358,7 @@ type baseController:(UIViewController *)controller animationTransition:(BOOL)ani
  
     if ([TakePhoto sharePhoto].resultBlock)
     {
-        [TakePhoto sharePhoto].resultBlock(@[image],nil);
+        [TakePhoto sharePhoto].resultBlock(@[image]);
     }
     
     
