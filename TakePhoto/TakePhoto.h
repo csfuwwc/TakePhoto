@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//import "TakePhotosTableController.h"
 #import <Photos/Photos.h>
 
 //照片间距

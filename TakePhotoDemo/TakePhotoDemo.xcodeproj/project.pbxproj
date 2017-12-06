@@ -27,11 +27,11 @@
 		CB2370181FCC02E200658FA8 /* TakePhotosTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23700A1FCC02E200658FA8 /* TakePhotosTableModel.m */; };
 		CB2370191FCC02E200658FA8 /* TakePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23700B1FCC02E200658FA8 /* TakePhoto.m */; };
 		CB23701A1FCC02E200658FA8 /* TakePhoto.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */; };
-		CB23707E1FCEBAE100658FA8 /* MDPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23706C1FCEBAE100658FA8 /* MDPresentTransition.m */; };
-		CB23707F1FCEBAE100658FA8 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB23706E1FCEBAE100658FA8 /* SystemManager.m */; };
 		CB2370801FCEBAE100658FA8 /* UIImage+More.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370701FCEBAE100658FA8 /* UIImage+More.m */; };
 		CB2370811FCEBAE100658FA8 /* UIView+More.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2370721FCEBAE100658FA8 /* UIView+More.m */; };
-		CB43CC1B1FD100A60068173F /* BoomPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43CC191FD100A50068173F /* BoomPresentView.m */; };
+		CB43CC251FD105B50068173F /* BoomPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43CC201FD105B50068173F /* BoomPresentView.m */; };
+		CB43CC261FD105B50068173F /* MDPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43CC221FD105B50068173F /* MDPresentTransition.m */; };
+		CB43CC271FD105B50068173F /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43CC241FD105B50068173F /* SystemManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,18 +71,19 @@
 		CB23700B1FCC02E200658FA8 /* TakePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhoto.m; sourceTree = "<group>"; };
 		CB23700C1FCC02E200658FA8 /* TakePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhoto.h; sourceTree = "<group>"; };
 		CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TakePhoto.bundle; sourceTree = "<group>"; };
-		CB23706B1FCEBAE100658FA8 /* MDPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPresentTransition.h; sourceTree = "<group>"; };
-		CB23706C1FCEBAE100658FA8 /* MDPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPresentTransition.m; sourceTree = "<group>"; };
-		CB23706D1FCEBAE100658FA8 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
-		CB23706E1FCEBAE100658FA8 /* SystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemManager.m; sourceTree = "<group>"; };
 		CB23706F1FCEBAE100658FA8 /* UIImage+More.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+More.h"; sourceTree = "<group>"; };
 		CB2370701FCEBAE100658FA8 /* UIImage+More.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+More.m"; sourceTree = "<group>"; };
 		CB2370711FCEBAE100658FA8 /* UIView+More.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+More.h"; sourceTree = "<group>"; };
 		CB2370721FCEBAE100658FA8 /* UIView+More.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+More.m"; sourceTree = "<group>"; };
 		CB2370821FCFAF1E00658FA8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		CB2370831FCFAF1E00658FA8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		CB43CC191FD100A50068173F /* BoomPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomPresentView.m; sourceTree = "<group>"; };
-		CB43CC1A1FD100A50068173F /* BoomPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomPresentView.h; sourceTree = "<group>"; };
+		CB43CC1D1FD103CF0068173F /* UIKit+TakePhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+TakePhoto.h"; sourceTree = "<group>"; };
+		CB43CC1F1FD105B50068173F /* BoomPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomPresentView.h; sourceTree = "<group>"; };
+		CB43CC201FD105B50068173F /* BoomPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomPresentView.m; sourceTree = "<group>"; };
+		CB43CC211FD105B50068173F /* MDPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPresentTransition.h; sourceTree = "<group>"; };
+		CB43CC221FD105B50068173F /* MDPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPresentTransition.m; sourceTree = "<group>"; };
+		CB43CC231FD105B50068173F /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
+		CB43CC241FD105B50068173F /* SystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +150,8 @@
 				CB2370031FCC02E200658FA8 /* TakePhotosList */,
 				CB236FF61FCC02E200658FA8 /* TakePhotosDetail */,
 				CB23700D1FCC02E200658FA8 /* TakePhoto.bundle */,
-				CB23704F1FCEBAE100658FA8 /* Other */,
+				CB23704F1FCEBAE100658FA8 /* UIKit+TakePhoto */,
+				CB43CC1E1FD105B50068173F /* Other */,
 			);
 			name = TakePhoto;
 			path = ../../TakePhoto;
@@ -188,19 +190,27 @@
 			path = TakePhotosList;
 			sourceTree = "<group>";
 		};
-		CB23704F1FCEBAE100658FA8 /* Other */ = {
+		CB23704F1FCEBAE100658FA8 /* UIKit+TakePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				CB43CC1A1FD100A50068173F /* BoomPresentView.h */,
-				CB43CC191FD100A50068173F /* BoomPresentView.m */,
-				CB23706B1FCEBAE100658FA8 /* MDPresentTransition.h */,
-				CB23706C1FCEBAE100658FA8 /* MDPresentTransition.m */,
-				CB23706D1FCEBAE100658FA8 /* SystemManager.h */,
-				CB23706E1FCEBAE100658FA8 /* SystemManager.m */,
 				CB23706F1FCEBAE100658FA8 /* UIImage+More.h */,
 				CB2370701FCEBAE100658FA8 /* UIImage+More.m */,
 				CB2370711FCEBAE100658FA8 /* UIView+More.h */,
 				CB2370721FCEBAE100658FA8 /* UIView+More.m */,
+				CB43CC1D1FD103CF0068173F /* UIKit+TakePhoto.h */,
+			);
+			path = "UIKit+TakePhoto";
+			sourceTree = "<group>";
+		};
+		CB43CC1E1FD105B50068173F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CB43CC1F1FD105B50068173F /* BoomPresentView.h */,
+				CB43CC201FD105B50068173F /* BoomPresentView.m */,
+				CB43CC211FD105B50068173F /* MDPresentTransition.h */,
+				CB43CC221FD105B50068173F /* MDPresentTransition.m */,
+				CB43CC231FD105B50068173F /* SystemManager.h */,
+				CB43CC241FD105B50068173F /* SystemManager.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -345,11 +355,9 @@
 			files = (
 				CB236F741FCBF32C00658FA8 /* ViewController.m in Sources */,
 				CB236F7F1FCBF32C00658FA8 /* main.m in Sources */,
+				CB43CC271FD105B50068173F /* SystemManager.m in Sources */,
 				CB2370191FCC02E200658FA8 /* TakePhoto.m in Sources */,
-				CB23707E1FCEBAE100658FA8 /* MDPresentTransition.m in Sources */,
-				CB23707F1FCEBAE100658FA8 /* SystemManager.m in Sources */,
 				CB2370151FCC02E200658FA8 /* TakePhotosTableCell.m in Sources */,
-				CB43CC1B1FD100A60068173F /* BoomPresentView.m in Sources */,
 				CB2370111FCC02E200658FA8 /* TakePhotosCell.m in Sources */,
 				CB2370801FCEBAE100658FA8 /* UIImage+More.m in Sources */,
 				CB236F711FCBF32C00658FA8 /* AppDelegate.m in Sources */,
@@ -357,7 +365,9 @@
 				CB23700E1FCC02E200658FA8 /* TakePhotoModel.m in Sources */,
 				CB2370181FCC02E200658FA8 /* TakePhotosTableModel.m in Sources */,
 				CB2370811FCEBAE100658FA8 /* UIView+More.m in Sources */,
+				CB43CC251FD105B50068173F /* BoomPresentView.m in Sources */,
 				CB2370131FCC02E200658FA8 /* TakePhotosController.m in Sources */,
+				CB43CC261FD105B50068173F /* MDPresentTransition.m in Sources */,
 				CB2370171FCC02E200658FA8 /* TakePhotosTableController.m in Sources */,
 				CB2370141FCC02E200658FA8 /* TakePhotoTitleView.m in Sources */,
 			);

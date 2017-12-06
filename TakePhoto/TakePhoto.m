@@ -10,8 +10,6 @@
 #import "BoomPresentView.h"
 #import "TakePhotosTableController.h"
 #import "SystemManager.h"
-
-
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @interface TakePhoto ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIViewControllerTransitioningDelegate>
